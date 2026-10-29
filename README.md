@@ -1,85 +1,60 @@
 # Yuki Desktop 🌸
 
-**Yuki Desktop** es un asistente personal con inteligencia artificial para Windows 11, con chat, proveedores de IA configurables, integraciones, herramientas y personalización de personajes.
+Asistente personal de escritorio con IA para **Windows 11 (x64)**. Yuki está diseñado para combinar chat, proveedores de IA configurables, personalidad, herramientas, integraciones y una experiencia visual con personajes.
 
-> **Estado: vista previa de desarrollo.** Este repositorio es el punto de distribución de Yuki Desktop, separado del [repositorio de desarrollo](https://github.com/SiliusJM/waifu-assistant). **Todavía no hay una descarga publicada aquí.**
+> **Distribución preliminar.** La descarga pública disponible es **v0.1.0-pre.1**. No es una versión estable ni incluye todas las capacidades desarrolladas.
 
-## Estado actual
+## Descargar
 
-La versión candidata **0.1.0** ha superado en una cuenta de Windows de pruebas: instalación por usuario, apertura de la aplicación, reinstalación de la misma versión y desinstalación (4/4). Estos resultados **no equivalen a una versión estable ni a una distribución pública aprobada**.
+Ve a **[Releases](https://github.com/SiliusJM/yuki-desktop/releases)** y descarga el instalador de la versión que desees probar. La publicación actual contiene `Yuki.Setup.0.1.0.exe`.
 
-| Área | Estado de la versión candidata |
+**Seguridad:** verifica que el archivo proviene de esta página oficial. El instalador preliminar no está firmado digitalmente; Windows puede mostrar advertencias. No desactives Windows Defender ni SmartScreen para instalarlo.
+
+## Instalar paso a paso
+
+1. Usa Windows 11 x64.
+2. Descarga el instalador de la sección **Releases**.
+3. Comprueba el nombre y la versión de la publicación; verifica el SHA-256 cuando esté publicado.
+4. Ejecútalo con la instalación por usuario, sin modificar los permisos de seguridad del sistema.
+5. Abre Yuki desde el menú Inicio.
+6. Si aparece un error, conserva el mensaje para reportarlo sin incluir credenciales ni datos personales.
+
+## Configuración inicial
+
+1. **IA y chat:** abre Configuración, selecciona un proveedor/modelo disponible e introduce sus credenciales únicamente en los campos previstos. Los proveedores externos pueden requerir conexión y una cuenta propia.
+2. **Personaje:** elige las opciones de apariencia y personalidad disponibles en esa versión. Los modelos y archivos personales no se distribuyen automáticamente.
+3. **Herramientas e integraciones:** habilita solamente las que necesites y revisa sus permisos. Algunos servicios requieren autorización adicional.
+4. **Voz y RVC:** **no están listos para uso completo en la descarga pública v0.1.0-pre.1**. No descargues archivos `.pth` o `.index` de procedencia dudosa ni uses voces sin autorización.
+
+## Qué está disponible y qué sigue en prueba
+
+| Función | Estado de la descarga pública v0.1.0-pre.1 |
 | --- | --- |
-| Instalación y apertura de la interfaz | Probadas en cuenta Windows de pruebas |
-| Chat y proveedores de IA | Implementados en el proyecto; verificar funciones disponibles en esta compilación |
-| Personalización de personajes e integraciones | Desarrolladas en el proyecto; disponibilidad depende de la compilación y configuración |
-| Voz Pocket/Pipecat | **No incluida funcionalmente en el instalador actual** |
-| RVC | Experimental; **no disponible en el instalador** |
-| Rosa de Yuki en la barra de tareas | **Error conocido**: puede mostrarse el icono de Electron |
-| Actualización entre versiones | No probada |
-| Conservación de datos tras desinstalación | No probada |
-| Firma digital | El instalador candidato no está firmado |
+| Instalación por usuario y apertura de la aplicación | Aceptación básica Windows completada |
+| Chat, proveedores, herramientas y configuración | Algunas capacidades dependen de la versión, proveedor y configuración |
+| Avatar/VRM y lip-sync | Disponibilidad y aceptación de usuario final pendientes |
+| Pocket/Pipecat y RVC | **No incluidos como funciones listas para esta versión** |
+| Actualización entre versiones | No aceptada para esta versión pública |
+| Icono original de Yuki | Limitación conocida en la versión preliminar |
+| Firma del instalador | Sin firma digital |
 
-## Descarga
-
-Cuando haya una versión aprobada, estará disponible en [Releases](https://github.com/SiliusJM/yuki-desktop/releases).
-
-**No hay un instalador publicado todavía.** Evita usar instaladores de procedencia desconocida o desactivar las protecciones de Windows.
-
-## Requisitos
-
-- Windows 11 de 64 bits.
-- Conexión a Internet para los proveedores de IA en la nube.
-- Cuenta y credenciales propias del proveedor elegido, si corresponde.
-
-## Guía de configuración
-
-### 1. Instalar
-
-1. Descarga el instalador desde una publicación oficial de **Releases**, cuando esté disponible.
-2. Comprueba el nombre, versión y SHA-256 indicados en las notas de esa versión.
-3. Ejecuta el instalador por usuario y sigue las instrucciones.
-4. Abre Yuki desde el menú Inicio.
-
-**Importante:** si Windows advierte que el ejecutable no tiene firma digital, verifica primero su origen. No desactives Defender o SmartScreen para continuar.
-
-### 2. Configurar la IA
-
-1. Abre **Configuración** en Yuki.
-2. Selecciona un proveedor compatible y el modelo deseado.
-3. Introduce las credenciales por los controles de configuración de la aplicación.
-4. Comprueba el chat con un mensaje breve.
-
-Nunca compartas claves API, contraseñas ni tokens en Issues o capturas públicas.
-
-### 3. Personalizar el personaje
-
-En Configuración, selecciona el personaje y las opciones de apariencia disponibles. Algunas rutas de avatar o VRM requieren archivos externos proporcionados por el usuario.
-
-### 4. Configurar herramientas e integraciones
-
-Activa únicamente las herramientas que necesites y revisa sus permisos. Los servicios externos pueden requerir autenticación adicional.
-
-### 5. Voz y RVC
-
-La versión candidata de instalación **no incluye los runtimes y componentes necesarios para proporcionar las rutas de voz de desarrollo**. Pocket/Pipecat y RVC no deben considerarse funciones listas para el usuario final en este paquete.
+Existe un candidato más reciente sometido a pruebas de Windows, pero **no se ha publicado aquí como versión estable**. No confundas las pruebas internas de versiones posteriores con las funciones de esta descarga.
 
 ## Desinstalación
 
-Desde **Windows → Configuración → Aplicaciones instaladas**, busca Yuki y elige **Desinstalar**.
+Abre **Configuración de Windows → Aplicaciones → Aplicaciones instaladas → Yuki → Desinstalar**. Antes de reinstalar o cambiar de versión, guarda una copia de seguridad de los datos que consideres importantes.
 
-La configuración del instalador pretende conservar los datos del usuario, pero **todavía no se ha validado físicamente la conservación tras desinstalar**. Haz una copia de seguridad de los datos importantes antes de cambios de versión.
+## Privacidad y seguridad
 
-## Problemas conocidos y limitaciones
+- No publiques API keys, contraseñas, tokens, sesiones, archivos de configuración privados ni modelos personales.
+- Yuki puede requerir acceso a servicios externos según las integraciones que actives.
+- Los modelos de voz y avatares de terceros pueden tener licencias y restricciones propias.
+- Este repositorio es exclusivamente el espacio público de documentación y distribución. **No contiene datos personales, archivos de desarrollo privados ni rutas locales del autor.**
 
-- El icono mostrado en la barra de tareas puede ser el de Electron, no la rosa de Yuki.
-- No hay soporte de voz empaquetada ni RVC listo para distribución.
-- No se ha comprobado una actualización entre dos versiones distintas.
-- El instalador candidato no está firmado.
-- Siguen pendientes revisiones de seguridad y compatibilidad antes de cualquier lanzamiento estable.
+## Problemas y comentarios
 
-## Código fuente y desarrollo
+Usa **[Issues](https://github.com/SiliusJM/yuki-desktop/issues)** e indica versión de Yuki, versión de Windows y el comportamiento observado. Elimina datos personales de capturas y registros.
 
-El desarrollo técnico, el historial de implementación y la documentación interna están en [SiliusJM/waifu-assistant](https://github.com/SiliusJM/waifu-assistant).
+## Estado del proyecto
 
-Este repositorio se reserva para documentación destinada a usuarios y futuras descargas verificadas. **No se incluyen modelos, credenciales ni runtimes experimentales.**
+La siguiente versión se publicará cuando complete las verificaciones de seguridad, configuración, audio/voz, RVC, avatar y distribución correspondientes. Las funciones no aceptadas no se anuncian como estables.
